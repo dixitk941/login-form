@@ -1,53 +1,82 @@
- @import url('https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600;700;800;900&display=swap');*{margin: 0;padding: 0;box-sizing: border-box;        font-family:"poppins",sans-serif;}
- body { 
-           display: flex;
-           justify-content: center;
-           align-items: center;
-           min-height: 100vh;
-           background: seagreen;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.wrapper{
-           width: 420px;
-           background: purple;
-           color: #fff;           
+.wrapper {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 350px;
 }
 
-.wrapper h1 {
-      font-size: 36px;
-      text-align: center;      
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-.wrapper .input-box {
-    width: 100px;
-    height: 50px;
-    margin: 30px 0;
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
 }
 
 .input-box input {
-    width: 100px;
-    height: 100px;
-    background: transparent;
-    border: none;
-    outline: none;
-    border: 2px solid rgba(255, 255, 255, .2);
-    border-radius: 20px;
-    font-size: 16px;
-    color: #fff;
-    padding: 20px 45px 20px 20px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-left: 40px;
 }
-
-
-.input-box input::placeholder{
-    color: #fff;
-}
-
 
 .input-box i {
     position: absolute;
-    right: 20px;
+    left: 10px;
     top: 50%;
-    transform: translate(-50%);
-    font-size: 20px;
-    
+    transform: translateY(-50%);
+    color: #777;
+}
+
+.Remember-forget {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.bt {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.bt:hover {
+    background-color: #0056b3;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-link a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
 }
